@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".NewActivity"
+    tools:ignore="ExtraText,MissingConstraints">
+    <Button
+        android:id="@+id/newreturn"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+      android:text="返回"
+        android:textSize="10dp"
+        android:layout_marginTop="17dp"
+        android:background="#00FFFFFF"
+        android:textColor="#101010"
+        android:gravity="center"
+        android:layout_marginLeft="7dp">
+    </Button>
+    <androidx.cardview.widget.CardView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        app:cardElevation="4dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="636dp">
+
+        <ImageView
+             android:id="@+id/foodimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/a2" />
+
+    </androidx.cardview.widget.CardView>
+    <!--  app:srcCompat="@mipmap/ic_launcher"  -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        app:cardElevation="4dp"
+
+  >
+    <TextView
+       android:id="@+id/foodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground4"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_weight="3"
+      android:layout_gravity="center|left"
+        android:text=" "
+        android:textColor="@color/colorText2"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        app:cardElevation="4dp"
+
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground4"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="6">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/foodid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_marginLeft="7dp"
+                android:text="TextView"
+                android:textColor="@color/colorText2"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/renminbi" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center|left"
+                    android:text="0.0元/份"
+                    android:textColor="@color/colorText2"
+                    android:layout_marginRight="30dp"/>
+                <Button
+                   android:id="@+id/foodredure"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorBackground2"
+                    android:text="－"
+                    android:textColor="@color/colorText2"
+                    android:textSize="20sp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:id="@+id/foodnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorText2"
+                    android:textSize="18sp"
+                  />
+                <Button
+                       android:id="@+id/foodorder"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@color/colorBackground2"
+                    android:text="＋"
+                    android:textColor="@color/colorText2"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@mipmap/edit"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBackground2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="总价："
+            android:textColor="@color/colorBackground1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/foodprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:textColor="#FF9800"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/foodpricesum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="元"
+            android:textColor="@color/colorBackground1"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/buttonorder"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorButton"
+            android:text="下单"
+            android:textColor="@color/colorText1" />
+    </LinearLayout>
+
+</LinearLayout>
